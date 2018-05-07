@@ -7,4 +7,10 @@
         <welcome-file>index.xhtml</welcome-file>
         <welcome-file>default.html</welcome-file>
     </welcome-file-list>
+
+    <!-- Load custom tag into JSF web application -->
+    <context-param>
+        <param-name>facelets.LIBRARIES</param-name>
+        <param-value>/WEB-INF/ds.taglib.xml</param-value>
+    </context-param>
 </web-app>

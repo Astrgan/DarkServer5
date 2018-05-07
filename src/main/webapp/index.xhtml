@@ -5,7 +5,8 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
-      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:ds="http://darkserver.com/facelets">
       
 	<h:head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -14,7 +15,7 @@
 	</h:head>
 	
 	<h:body>
-	
+
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		  <a class="navbar-brand" href="#">Navbar</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,20 +39,15 @@
 		  </div>
 		</nav>
 
+        <div class="container">
+            <div class="row">
+                <c:forEach var="num" items="${data.array}">
 
-		<c:forEach var="num" items="${data.array}">
-			
-			<div class="card" style="width: 18rem;">
-			  <img class="card-img-top" src="https://i.ytimg.com/vi/1n8mAem-NB4/maxresdefault.jpg" alt="Card image cap"></img>
-			  <div class="card-body">
-			    <h5 class="card-title">Card title <h:outputLabel value="#{num}"/></h5>
-			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			    <a href="#" class="btn btn-primary">Go somewhere</a>
-			  </div>
-			</div>
-		</c:forEach>
-		
-		
+                    <ds:card image="https://i.ytimg.com/vi/1n8mAem-NB4/maxresdefault.jpg" Card_title="#{num}"/>
+
+                </c:forEach>
+            </div>
+        </div> <!--container-->
 		
 		
 	</h:body>

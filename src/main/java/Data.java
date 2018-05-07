@@ -6,7 +6,7 @@ import javax.inject.Named;
 public class Data {
 	
 	private String dataHello = "Hello CDI";
-	private int[] array = {1,2,3};
+	private String[] array = {"Title1","Title2","Title3","Title2","Title3","Title2","Title3","Title2","Title3","Title2","Title3"};
 
 	public String getDataHello() {
 		return dataHello;
@@ -16,11 +16,11 @@ public class Data {
 		this.dataHello = dataHello;
 	}
 
-	public int[] getArray() {
+	public String[] getArray() {
 		return array;
 	}
 
-	public void setArray(int[] array) {
+	public void setArray(String[] array) {
 		this.array = array;
 	}
 	
