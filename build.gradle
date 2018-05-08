@@ -21,4 +21,7 @@ dependencies {
     // https://mvnrepository.com/artifact/com.sun.faces/jsf-impl
     compile group: 'com.sun.faces', name: 'jsf-impl', version: '2.2.12'
     compile 'javax:javaee-api:7.0'
+    // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.17.Final'
+
 }
